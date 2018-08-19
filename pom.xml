@@ -17,12 +17,20 @@
 -->
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
-    <groupId>org.openshift.steve</groupId>
-    <artifactId>my-rs-app</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+         <groupId>org.openshift.steve</groupId>
+         <artifactId>my-rs-app</artifactId>
+         <version>1.0-SNAPSHOT</version>
+         <packaging>war</packaging>
+         <name>My JAX-RS APPlication</name>
+         <description>Our base of a Jax-RS application</description>
+    </parent>
+    <artifactId>helloworld-rs</artifactId>
     <packaging>war</packaging>
-    <name>My JAX-RS APPlication</name>
-    <description>Our base of a Jax-RS application</description>
+    <name>Quickstart: helloworld-rs</name>
+    <description>A simple Hello World project that uses JAX-RS</description>
+
     <licenses>
         <license>
             <name>Apache License, Version 2.0</name>
